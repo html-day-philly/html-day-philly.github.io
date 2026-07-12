@@ -69,6 +69,7 @@
             border: 1px solid black;
             filter: drop-shadow(4px 4px 6px black);
             position: absolute;
+            height: fit-content !important;
         }
 
         .list-heading-3 {
@@ -95,13 +96,13 @@
             }
         }
 
-        @media (max-width: 500px) {
+        @media screen and (max-width: 768px) {
             div {
-                position: relative !important;
+                position: relative;
                 top: 0 !important;
                 left: 0 !important;
                 margin: 30px;
-                max-width: calc(100vw - 60px) !important;
+                max-width: calc(100vw - 60px);
                 height: fit-content !important;
                 width: fit-content !important;
                 padding: 30px !important;
@@ -122,14 +123,14 @@
         </div>
         <div id="year"
             style="height: 5.22222px; left: 56.8889px; padding-bottom: 21px; padding-left: 10px; padding-right: 10px; padding-top: 10px;  top: 141.889px; width: 328.222px; z-index: 102;">
-            <p style="top: -28px; font-family: DotGothic16; font-size: 2rem">2026 edition</p>
+            <p style="top: -26px; font-family: DotGothic16; font-size: 2rem">2026 edition</p>
         </div>
     </header>
     <div id="whenwhere" aria-labelledby="whenwhere-header"
         style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 100px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 100px;  top: 124.985px; width: 650px; z-index: 100;">
         <h2 style="font-size: 3rem" id="whenwhere-header">When &amp; Where</h2>
         <p>Saturday, August 8th, 2026</p>
-        <p>Palumbo Park (723 Catharine St</p>
+        <p>Palumbo Park (723 Catharine St)</p>
         <p>1pm&ndash;3pm</p>
     </div>
     <div id="rain"
