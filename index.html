@@ -2,7 +2,7 @@
 <html lang="en-US">
 
 <head>
-    <title>HTML Day Philly 2026</title>
+    <title>HTML Day Philadelphia 2026</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="https://htmldayphilly.hotglue.me/img/favicon.ico">
     <link rel="stylesheet" href="fonts.css">
@@ -11,10 +11,7 @@
 
         
         body {
-            padding-bottom: 50px !important;
             background-color: lavender !important;
-            height: 100vh;
-            width: 100vw;
             font-family: "Times New Roman", "Times", serif;
         }
 
@@ -101,10 +98,16 @@
                 position: relative;
                 top: 0 !important;
                 left: 0 !important;
-                margin: 30px 0;
-                max-width: 100%;
+                margin: 30px 15px;
+                box-sizing: border-box;
+                max-width: calc(100% - 30px) !important;
                 height: fit-content !important;
                 padding: 30px !important;
+                font-size: 120% !important;
+            }
+
+            body {
+                overflow-x: hidden;
             }
         }
         
@@ -127,7 +130,7 @@
     </header>
     <div id="whenwhere" aria-labelledby="whenwhere-header"
         style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 100px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 100px;  top: 124.985px; width: 650px; z-index: 100;">
-        <h2 style="font-size: 3rem" id="whenwhere-header">When &amp; Where</h2>
+        <h2 style="font-size: 3rem; line-height: 1" id="whenwhere-header">When &amp; Where</h2>
         <p>Saturday, August 8th, 2026</p>
         <p>Palumbo Park (723 Catharine St)</p>
         <p>1pm&ndash;3pm</p>
@@ -163,7 +166,7 @@
         </ul>
     </div>
     <div id="park"
-        style="font-size: 26px; height: 1850px; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1200.96px; width: 530px; z-index: 100;">
+        style="font-size: 26px; height: 1850px; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1200.96px; width: 530px; z-index: 100; margin-bottom: 50px">
         <h2 id="venue">About the park:</h2>
         <ul aria-labelledby="venue" style="list-style-type: none; padding-left: 1rem">
             <li><span role="heading" aria-level="3" class="list-heading-3">Public Transport:</span> 47 northbound and southbound stops half a block away, <span
