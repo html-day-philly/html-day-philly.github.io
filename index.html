@@ -13,7 +13,7 @@
             font-family: "Local Times", "Times New Roman", "Times", serif;
             background-image: url("texbg.jpg");
             background-size: 200px;
-            zoom: 90%;
+            zoom: 80%;
         }
 
         h1,
@@ -80,15 +80,20 @@
 
         nav {
             left: 40px;
-            top: 250px;
+            top: 240px;
             width: 400px;
             padding: 30px;
-            z-index: 1000;
+            padding-top: 0;
+            z-index: 0;
         }
 
         nav li {
             margin: 15px 0;
             font-size: 1.6rem;
+        }
+
+        nav a {
+            color: black !important;
         }
 
         address {
@@ -183,7 +188,7 @@
 
     <nav>
         <h2 style="margin-bottom: -30px">Table of Contents</h2>
-        <p style="text-align: right; position: relative; top: -60px; ">
+        <p style="text-align: right; position: relative; top: -50px;">
             <a href="#main">(skip nav)</a>
         </p>
         <ul>
@@ -197,29 +202,33 @@
     </nav>
 
     <main id="main">
-        <section id="whenwhere" aria-labelledby="whenwhere-header"
-            style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 550px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 100px;  top: 50.985px; width: 550px; z-index: 100;">
-            <h2 style="font-size: 3rem; line-height: 1" id="whenwhere-header">When &amp; Where</h2>
-            <p><time datetime="2026-08-08">Saturday, August 8th, 2026</time></p>
-            <p><a href="https://maps.app.goo.gl/oJHbF3sLqDafesNo9">Palumbo Park (723 Catharine St)</a></p>
-            <p><time datetime="2026-08-08T13:00">1pm</time> <span aria-label="to">&ndash;</span> <time
-                    datetime="2026-08-08T15:00">3pm</time></p>
-        </section>
-        <section id="rain"
-            style="font-size: 30px; font-style: normal; font-weight: normal; height: 140; left: 400px; line-height: 1.30861em; padding-bottom: 13px; padding-left: 73px; padding-right: 73px; padding-top: 13px;  top: 490.992px; width: 630.025px; z-index: 100;">
-            <h3 style="font-weight: bold; margin-bottom: 30px; padding-bottom: 0;">Rain or excessive heat location:</h3>
-            <p><a href="https://maps.app.goo.gl/rxfCWyun5DP4EtEV9">Charles Santore Library (932 South 7th Street)</a>
-            </p>
-            <p>*<i>masking requested if indoors</i></p>
-            <br>
-            <p style="font-weight: 600; font-size: 23px">Check this site for possible updates!</p>
-        </section>
-        <section
-            style="height: 290px; left: 66.9969px; line-height: 1.05692em;  top: 750px; width: fit-content; z-index: 105; text-align: center;">
-            <img src="https://html.energy/images/star.png" id="big-star" style="width: 280px"
-                alt="spinning green HTML energy star">
-        </section>
-        <div class="normal-div" style="top: 100px">
+        <div class="normal-div" style="top: -90px">
+            <section id="whenwhere" aria-labelledby="whenwhere-header"
+                style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 550px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 20px;  top: 50.985px; width: 550px; z-index: 100;">
+                <h2 style="font-size: 3rem; line-height: 1" id="whenwhere-header">When &amp; Where</h2>
+                <p><time datetime="2026-08-08">Saturday, August 8th, 2026</time></p>
+                <p><a href="https://maps.app.goo.gl/oJHbF3sLqDafesNo9">Palumbo Park (723 Catharine St)</a></p>
+                <p><time datetime="2026-08-08T13:00">1pm</time> <span aria-label="to">&ndash;</span> <time
+                        datetime="2026-08-08T15:00">3pm</time></p>
+            </section>
+            <section id="rain"
+                style="font-size: 30px; font-style: normal; font-weight: normal; height: 140; left: 400px; line-height: 1.30861em; padding-bottom: 13px; padding-left: 73px; padding-right: 73px; padding-top: 13px;  top: 415.992px; width: 630.025px; z-index: 100;">
+                <h3 style="font-weight: bold; margin-bottom: 30px; padding-bottom: 0;">Rain or excessive heat location:
+                </h3>
+                <p><a href="https://maps.app.goo.gl/rxfCWyun5DP4EtEV9">Charles Santore Library (932 South 7th
+                        Street)</a>
+                </p>
+                <p>*<i>masking requested if indoors</i></p>
+                <br>
+                <p style="font-weight: 600; font-size: 1.6rem">Check this site for possible updates!</p>
+            </section>
+            <section
+                style="height: 290px; left: 66.9969px; line-height: 1.05692em;  top: 800px; width: fit-content; z-index: 105; text-align: center;">
+                <img src="https://html.energy/images/star.png" id="big-star" style="width: 280px"
+                    alt="spinning green HTML energy star">
+            </section>
+        </div>
+        <div class="normal-div" style="top: -50px">
             <section id="whatis"
                 style="font-size: 24px; height: fit-content; left: 500px; line-height: 1.36417em; padding-bottom: 15px; padding-left: 35px; padding-right: 21px; padding-top: 6px;  top: 800px; width: 564.025px; z-index: 100;">
                 <h2>What is this?</h2>
@@ -243,7 +252,7 @@
                 </ul>
             </section>
             <section id="about-event"
-                style="font-size: 26px; height: fit-content; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1200.96px; width: 530px; z-index: 100; margin-bottom: 50px"
+                style="font-size: 26px; height: fit-content; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1150.96px; width: 530px; z-index: 100; margin-bottom: 50px"
                 aria-labelledby="venue">
                 <h2 id="venue">Venue & Event Details:</h2>
 
@@ -348,7 +357,7 @@
                         with
                         if
                         you
-                        care about the code & I wouldn't do it again :-). That is why the styling is nightmarish & I
+                        care about the code & I wouldn't do it again :-). That is why the inline styling is a mess & I
                         moved
                         it
                         to
