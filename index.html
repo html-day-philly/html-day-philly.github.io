@@ -48,6 +48,11 @@
             margin: 3.5rem 0;
         }
 
+        nav li {
+            margin: 15px 0;
+            font-size: 1.3rem;
+        }
+
         .tobring li {
             margin: 2rem 0;
         }
@@ -60,11 +65,12 @@
 
         dt {
             font-weight: bold;
-            margin-top: 1rem;
+            margin-top: 1.5rem;
         }
 
         section,
-        div {
+        div,
+        nav {
             background-color: white;
             color: black;
             border: 1px solid black;
@@ -72,9 +78,23 @@
             position: absolute;
         }
 
+        nav {
+            left: 1300px;
+            width: 400px;
+            padding: 30px;
+        }
+
         address {
             display: inline;
             font-style: normal;
+        }
+
+        #etc {
+            background: transparent;
+            border: none;
+            margin: 0 !important;
+            padding: 0 !important;
+            filter: none;
         }
 
         /*thank you elliott for the rotating star code*/
@@ -106,7 +126,8 @@
         @media screen and (max-width: 768px) {
 
             section,
-            div {
+            div,
+            nav {
                 position: relative;
                 top: 0 !important;
                 left: 0 !important;
@@ -138,9 +159,24 @@
         </div>
     </header>
 
+    <nav>
+        <h2>Table of Contents</h2>
+        <p style="text-align: right; position: relative; top: -90px; ">
+            <a href="#main">(skip nav)</a>
+        </p>
+        <ul>
+            <li><a href="#whenwhere">When and Where</a></li>
+            <li><a href="#rain">Rain or Heat Location</a></li>
+            <li><a href="#whatis">What is this?</a></li>
+            <li><a href="#about-event">Venue & Event Details</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#etc">Other notes</a></li>
+        </ul>
+    </nav>
+
     <main id="main">
         <section id="whenwhere" aria-labelledby="whenwhere-header"
-            style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 100px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 100px;  top: 124.985px; width: 500px; z-index: 100;">
+            style="font-size: 2.2rem; font-weight: normal; height: 306.025px; left: 100px; line-height: 1.57953em; padding-bottom: 89px; padding-left: 66px; padding-right: 66px; padding-top: 100px;  top: 124.985px; width: 550px; z-index: 100;">
             <h2 style="font-size: 3rem; line-height: 1" id="whenwhere-header">When &amp; Where</h2>
             <p><time datetime="2026-08-08">Saturday, August 8th, 2026</time></p>
             <p><a href="https://maps.app.goo.gl/oJHbF3sLqDafesNo9">Palumbo Park (723 Catharine St)</a></p>
@@ -149,14 +185,17 @@
         </section>
         <section id="rain"
             style="font-size: 30px; font-style: normal; font-weight: normal; height: 140; left: 400px; line-height: 1.30861em; padding-bottom: 13px; padding-left: 73px; padding-right: 73px; padding-top: 13px;  top: 490.992px; width: 772.025px; z-index: 100;">
-            <h3 style="font-weight: bold; margin-bottom: 0; padding-bottom: 0;">Rain location:</h3>
+            <h3 style="font-weight: bold; margin-bottom: 0; padding-bottom: 0;">Rain or excessive heat location:</h3>
             <p><a href="https://maps.app.goo.gl/rxfCWyun5DP4EtEV9">Charles Santore Library (932 South 7th Street)</a>
             </p>
             <p>*<i>masking requested if indoors</i></p>
+            <br>
+            <p style="font-weight: 600; font-size: 23px">Check this site for possible updates!</p>
         </section>
         <section
             style="height: 290px; left: 66.9969px; line-height: 1.05692em;  top: 750px; width: fit-content; z-index: 105; text-align: center;">
-            <img src="https://html.energy/images/star.png" id="big-star" style="width: 280px" alt="spinning green star">
+            <img src="https://html.energy/images/star.png" id="big-star" style="width: 280px"
+                alt="spinning green HTML energy star">
         </section>
         <section id="whatis"
             style="font-size: 24px; height: fit-content; left: 500px; line-height: 1.36417em; padding-bottom: 15px; padding-left: 35px; padding-right: 21px; padding-top: 6px;  top: 800px; width: 564.025px; z-index: 100;">
@@ -180,9 +219,10 @@
                 <li>A friend <span aria-label="smiley emoticon">:-)</span></li>
             </ul>
         </section>
-        <section id="park"
-            style="font-size: 26px; height: fit-content; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1200.96px; width: 530px; z-index: 100; margin-bottom: 50px">
-            <h2 id="venue">About the park:</h2>
+        <section id="about-event"
+            style="font-size: 26px; height: fit-content; left: 37.963px; line-height: 1.5; padding-bottom: 79px; padding-left: 50px; padding-right: 50px; padding-top: 79px;  top: 1200.96px; width: 530px; z-index: 100; margin-bottom: 50px"
+            aria-labelledby="venue">
+            <h2 id="venue">Venue & Event Details:</h2>
 
             <dl aria-labelledby="venue">
                 <dt>Public Transport:</dt>
@@ -207,11 +247,34 @@
                     requires knocking for a key from the desk.</dd>
 
                 <dt>Seating:</dt>
-                <dd>The park has two picnic tables I'll try to reserve beforehand, one with two wheelchair-accessible
-                    seats. There are also many benches!</dd>
+                <dd>The park has two metal picnic tables I'll try to reserve beforehand, one with two
+                    wheelchair-accessible seats. There are also many benches! All seating is slatted, including
+                    tabletops.</dd>
 
-                <dt>Shade:</dt>
+                <dt>Lighting:</dt>
                 <dd>Lots of trees and plants, park is quite shady in the afternoon.</dd>
+
+                <dt>Participation:</dt>
+                <dd>Informal, come as you are, no centralized activity just talk about whatever you want with whoever
+                    you want! I (Yone) only speak english and HTML, and cannot personally bring any kind of interpreter.
+                </dd>
+
+                <dt>Food:</dt>
+                <dd>Bring whatever snacks you'd like (unless it's raining and we're in the library). Please be aware and
+                    communicative of allergens!! Definitely bring water&mdash;there is also a water bottle refilling
+                    station in Fleisher. There is also a lot of tasty food in the vicinity, including John's Water Ice
+                    around the corner which is a nice treat for anybody.</dd>
+
+                <dt>Childcare:</dt>
+                <dd>Kids are so welcome! Personally, I teach first grade and love talking to kids of all ages about
+                    websites! This park doesn't have a playground of any kind, and might be kind of bland for kids
+                    unless they like looking at plants and interacting with very bold squirrels. Expect to see lots of
+                    people eating water ice.</dd>
+
+                <dt>General assistance:</dt>
+                <dd>Let me know if you need any help of any kind, I am happy to provide direction and assistance getting
+                    into the park, but cannot transport anyone there (contact info in next section, email me ahead of
+                    time if you want my phone number!)</dd>
 
                 <dt>Wifi:</dt>
                 <dd>I have the Fleisher wifi password (shhhhhh) and it reaches the full park, but I wouldn't depend on
@@ -226,32 +289,45 @@
                     facilities
                     and
                     accessibility info can be found here.</a></p>
+            <br>
+            <p><i>This section is loosely based on the <a
+                        href="https://womenslibrary.org.uk/collection-item/sad-access-code/">Sisters Against Disablement
+                        (SAD) Access Code</a></i></p>
         </section>
         <section id="contact"
             style="font-size: 22px; height: fit-content; left: 855.946px; line-height: 1.35182em; opacity: 0.99; padding-bottom: 83px; padding-left: 29px; padding-right: 29px; padding-top: 83px;  top: 1590.96px; width: 284.025px; z-index: 80;">
             <h2>Contact</h2>
             <p>Hi, I'm <a href="https://yone.house">Yone.</a></p>
-            <address>Email me at <a href="mailto:doorbell@yone.house">doorbell@yone.house</a> with any questions or concerns or requests or just to say hi.</address>
-            <p>If anyone wants to help me reserve seating I'll try to be there at like 12:30 <span aria-label="smiley emoticon">:-)</span>.</p>
+            <address>Email me at <a href="mailto:doorbell@yone.house">doorbell@yone.house</a> with any questions or
+                concerns or requests or just to say hi.</address>
+            <p>If anyone wants to help me reserve seating I'll try to be there at like 12:30 <span
+                    aria-label="smiley emoticon">:-)</span>.</p>
         </section>
-        <section id="design-note"
-            style="font-size: 19px; height: fit-content; left: 841.968px; line-height: 1.5em; padding: 20px;  top: 2190px; width: 321.025px; z-index: 100;">
-            <aside>* This site was originally laid out with <a href="https://hotglue.me">hotglue.me</a>, with a lot of
-                custom HTML to make it accessible and structurally sound! To be honest, it is hard to wrestle with if
-                you
-                care about the code & I wouldn't do it again :-). That is why the inline styling is a mess & I moved it
-                to
-                GitHub Pages.</aside>
-        </section>
-        <section id="thanks"
-            style="font-size: 20px; height: fit-content; left: 950.958px; line-height: 1.17033em; padding-bottom: 45px; padding-left: 11px; padding-right: 11px; padding-top: 45px;  top: 2400.96px; width: 217.025px; z-index: 99;">
-            <p><br>
-                And thank you to <a href="https://www.ragman.net/about">ragman</a> and <a
-                    href="https://www.pixouls.xyz/about.html">Pixel</a> for organizing last year's Philly HTML&nbsp;Day
-                <span aria-label="smiley emoticon">:-)</span>
-            </p><br>
-            <p><a href="https://htmldayphilly.neocities.org">This is last year's site!</a></p>
-        </section>
+
+        <div id="etc">
+            <section id="design-note"
+                style="font-size: 19px; height: fit-content; left: 841.968px; line-height: 1.5em; padding: 20px;  top: 2190px; width: 321.025px; z-index: 100;">
+                <aside>* This site was originally laid out with <a href="https://hotglue.me">hotglue.me</a>, with a lot
+                    of
+                    custom HTML to make it accessible and structurally sound! To be honest, it is hard to wrestle with
+                    if
+                    you
+                    care about the code & I wouldn't do it again :-). That is why the inline styling is a mess & I moved
+                    it
+                    to
+                    GitHub Pages.</aside>
+            </section>
+            <section id="thanks"
+                style="font-size: 20px; height: fit-content; left: 950.958px; line-height: 1.17033em; padding-bottom: 45px; padding-left: 11px; padding-right: 11px; padding-top: 45px;  top: 2400.96px; width: 217.025px; z-index: 99;">
+                <p><br>
+                    And thank you to <a href="https://www.ragman.net/about">ragman</a> and <a
+                        href="https://www.pixouls.xyz/about.html">Pixel</a> for organizing last year's Philly
+                    HTML&nbsp;Day
+                    <span aria-label="smiley emoticon">:-)</span>
+                </p><br>
+                <p><a href="https://htmldayphilly.neocities.org">This is last year's site!</a></p>
+            </section>
+        </div>
     </main>
 </body>
 
